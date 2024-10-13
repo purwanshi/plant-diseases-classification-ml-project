@@ -6,8 +6,8 @@ import tensorflow as tf
 from PIL import Image
 import streamlit as st
 
-working_dir = os.path.dirname(os.path.abspath(st.title('test image/model_gui.py'))
-model_path = f"{working_dir}test image/model_gui.py"
+working_dir = os.path.dirname(os.path.abspath(st.title(__file__)
+model_path = f"{working_dir}plant_diseases_detection.h5"
 
 model = tf.keras.models.load_model(model_path)
 
